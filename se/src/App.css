@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@keyframes soft-bounce {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-52%) scale(1.02);
+  }
+}
+
+.animate-soft-bounce {
+  animation: soft-bounce 1s ease-in-out  infinite;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #1e293b; /* Light Mode */
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #1e293b; /* Dark Mode (slate-800ish) */
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: #94a3b8; /* Light Mode thumb (blue-grayish) */
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #64748b; /* Dark Mode thumb (blue-gray darker) */
+}
+
+/* Scrollbar Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
